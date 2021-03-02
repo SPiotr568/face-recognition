@@ -80,6 +80,7 @@ while True:
     win_name = "FACE RECOGNITION"
     cv2.namedWindow(win_name)
     cv2.imshow(win_name, img)
-    cv2.waitKey(1)
+    if cv2.waitKey(10) == ord('q'):
+        break
 
 cv2.destroyAllWindows()
